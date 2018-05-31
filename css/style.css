@@ -1,0 +1,326 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 26px 40px 26px 40px;
+	border-bottom: 1px solid rgba(0,0,0,.0975);
+	background-color: #FFF;
+	width: 100%
+}
+
+.infosuser{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+}
+
+#fauxInput {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid grey;
+	padding: 2px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#fauxInput img{
+	width: 15px;
+	height: 15px;
+	display: none;
+}
+
+#fauxInput input{
+	text-align: center;
+	height: 20px;
+	border: none;
+	background-image: url("../images/loupe.png");
+	background-position: 30%;
+	background-repeat: no-repeat;
+
+
+}
+
+#fauxInput2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid grey;
+	padding: 2px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#fauxInput2 img{
+	width: 10px;
+	height: 10px;
+}
+
+#fauxInput2 input{
+	height: 20px;
+	border: none;
+}
+
+#signUp{
+	background: #3897f0;
+	border-color: #3897f0;
+	color: #fff;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 26px;
+	outline: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 8px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	height: auto;
+}
+
+#logIn{
+	color: #3897f0;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 26px;
+	outline: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 8px;
+	
+}
+
+
+#profile{
+	margin: auto;
+	
+	width: 70vw;
+	display: flex;
+	flex-direction: row;
+
+
+
+}
+
+#logouser{
+	border-radius: 50%;
+	border: 1px solid grey;
+	width: 152px;
+	height: 152px;
+	margin: 45px 55px 0px 100px;
+
+}
+
+h1 {
+font-size: 32px;
+line-height: 40px;
+font-weight: lighter;
+
+}
+
+#descriuser{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+#descriuser #line1{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#descriuser #line1 *{ 
+	margin-right: 20px;
+}
+
+#descriuser ul li{
+	margin-right: 45px;
+}
+
+#descriuser ul{
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+}
+
+
+#iduser, #idusermini{
+	font-weight: bold;
+}
+
+#Follow{
+	background: #3897f0;
+	border-color: #3897f0;
+	color: #fff;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 6px 25px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	height: 13px;
+	margin: 10px;
+}
+
+#gallery {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	flex-wrap: wrap;
+	
+	margin-top: 25px;
+	z-index: 0;
+	
+
+}
+
+.contInsta {
+	height: 20vw;
+	width: 20vw;
+	margin: 15px;
+	overflow: hidden;
+	background-color: black;
+}
+
+.imgInsta {
+	width: 100%;
+}
+
+#masco {
+	position: absolute;
+	top: 0;
+	left: 0;
+height: 100vh;
+width: 100vw;
+/*position: absolute;
+top: 0;
+left: 0;*/
+background-color: black;
+opacity: 0.8;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: hidden;
+}
+
+#contMonInsta{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+}
+
+#monInsta{
+	height: 75vh;
+}
+
+#infoInsta{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 350px;
+	background-color: white;
+	height: 75vh;
+}
+
+#miniprofile{
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+#firstLine{
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+
+#miniprofile img{
+	
+	border-radius: 50%;
+	border: 1px solid grey;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	margin-left: 10px
+}
+
+
+#Followmini{
+	background: #3897f0;
+	border-color: #3897f0;
+	color: #fff;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	margin-right: 20px;
+	padding: 6px 25px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	height: 13px;
+
+}
+
+#idusermini{
+	font-weight: bold;
+}
+
+#commUser{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#comms{
+	overflow: scroll;
+	list-style: none;
+}
+
